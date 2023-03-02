@@ -1,0 +1,47 @@
+package com.hspedu.homework_13;
+
+public class Person {
+	//属性
+	private String name;
+	private char gender;
+	private int age;
+	
+	public Person(String name, char gender, int age) {
+		this.name = name;
+		this.gender = gender;
+		this.age = age;
+		
+	}
+	//方法
+	public String play() {
+		return name + "爱玩" ;
+		
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public char getGender() {
+		return gender;
+	}
+	public void setGender(char gender) {
+		this.gender = gender;
+	}
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	}
+	//应当分析出，我们需要打印信息的方法printInfo()
+	public String basicInfo() {
+		return "姓名: "+ name + "\n年龄: "+ age + "\n性别: "+ gender ;			
+	}
+	@Override
+	public String toString() {
+		return "Person [name=" + name + ", gender=" + gender + ", age=" + age + "]";
+	}
+	
+}
